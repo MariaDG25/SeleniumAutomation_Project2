@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DragandDropTest" verbose="1">
+	<parameter name="browser" value="firefox"></parameter>
+	<test name="DragandDropTest">
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.draganddroptest.DragandDropTest" />
+		</classes>
+	</test>
+
+</suite>

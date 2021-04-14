@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CheckBoxesTest]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="DropdownTest(failed)">
+    <classes>
+      <class name="com.herokuapp.theinternet.dropdowntest.DropdownTest">
+        <methods>
+          <include name="selectOptionDropdown"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.dropdowntest.DropdownTest -->
+    </classes>
+  </test> <!-- DropdownTest(failed) -->
+</suite> <!-- Failed suite [CheckBoxesTest] -->

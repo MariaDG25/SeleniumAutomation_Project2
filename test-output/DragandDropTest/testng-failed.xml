@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DragandDropTest]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="DragandDropTest(failed)">
+    <classes>
+      <class name="com.herokuapp.theinternet.draganddroptest.DragandDropTest">
+        <methods>
+          <include name="selectOptionDropdown"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.draganddroptest.DragandDropTest -->
+    </classes>
+  </test> <!-- DragandDropTest(failed) -->
+</suite> <!-- Failed suite [DragandDropTest] -->

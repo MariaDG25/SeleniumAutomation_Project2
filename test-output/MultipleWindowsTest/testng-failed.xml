@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MultipleWindowsTest]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="MultipleWindowsTest(failed)">
+    <classes>
+      <class name="com.herokuapp.theinternet.multiplewindowstest.MultipleWindowsTest">
+        <methods>
+          <include name="MultipleWdwTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.multiplewindowstest.MultipleWindowsTest -->
+    </classes>
+  </test> <!-- MultipleWindowsTest(failed) -->
+</suite> <!-- Failed suite [MultipleWindowsTest] -->
