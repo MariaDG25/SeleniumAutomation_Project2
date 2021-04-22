@@ -24,12 +24,12 @@ public class DragandDropTest extends TestUtilities {
 		dragDrop.dragAndDropAtoB();
 		log.info("AHI VA" + dragDrop.getAheader());
 		// check now column-a has header text 'B'
-		Assert.assertTrue(dragDrop.getAheader().contains("B"), "The header text is not the expected");
+		Assert.assertTrue(dragDrop.getAheader().contains("B"), "The header text is not as expected");
 
 		// drag and drop B to A
 		dragDrop.dragAndDropBtoA();
 
 		// check now column-a has header text 'B'
-		Assert.assertTrue(dragDrop.getAheader().contains("A"), "The header text is not the expected");
+		Assert.assertTrue(dragDrop.getAheader().contains("A"), "The header text is not as expected");
 	}
 }

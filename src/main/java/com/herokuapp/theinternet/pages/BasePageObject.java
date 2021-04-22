@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -74,6 +75,7 @@ public class BasePageObject {
 			attempts++;
 		}
 	}
+
 
 	// returns true if the element is displayed
 	protected boolean elementDisplayed(By locator) {
@@ -174,11 +176,18 @@ public class BasePageObject {
 				find(from), find(to));
 	}
 
+	// drag and drop slider
+	protected void dragAndDropSlider(By slider, int to) {
+		Actions move = new Actions(driver);
+		Action action = move.dragAndDropBy(find(slider), to, 0).build();
+		action.perform();
+	}
+
 	// hover over elements
-	protected void hoverOver(By element) {
+	protected void hoverOver(WebElement element) {
 		// instantiate Action Class
 		Actions actions = new Actions(driver);
 		// mouse hover element
-		actions.moveToElement(find(element)).perform();
+		actions.moveToElement(element).perform();
 	}
 }

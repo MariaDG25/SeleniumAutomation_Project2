@@ -25,7 +25,7 @@ public class DropdownTest extends TestUtilities {
 		dropdownPage.selectOption(2);
 		
 		//verify option 2 is selected
-		assertEquals(dropdownPage.getOptionSelected(),"Option 2", "the option is not the expected one.");
+		assertEquals(dropdownPage.getOptionSelected(),"Option 2", "the option is not what is expected.");
 	}
 
 }

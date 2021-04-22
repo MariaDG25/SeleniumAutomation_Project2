@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="HoverOverTest" verbose="1">
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="HoverOverTest-FF">
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.hoverovertest.HoverOverTest" />
+		</classes>
+	</test>
+	<test name="HoverOverTest-CH">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.hoverovertest.HoverOverTest" />
+		</classes>
+	</test>
+</suite>
+	

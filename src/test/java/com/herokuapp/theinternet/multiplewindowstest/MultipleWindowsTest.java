@@ -26,5 +26,6 @@ public class MultipleWindowsTest extends TestUtilities {
 		//checking it is correctly opened
 		log.info("Checking the title and the URL");
 		Assert.assertTrue(newWidw.getNewWindowTitle().contains("New Window"));
+		
 	}
 }

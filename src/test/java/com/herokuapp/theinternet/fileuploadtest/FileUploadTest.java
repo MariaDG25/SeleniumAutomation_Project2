@@ -25,7 +25,7 @@ public class FileUploadTest extends TestUtilities {
 
 		// verify document is uploaded
 		Assert.assertTrue(fileUpload.currentFileName().contains(fileUpload.getfileName()),
-				"the document is not the expected");
+				"the document is not as expected");
 	}
 
 }

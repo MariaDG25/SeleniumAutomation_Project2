@@ -18,17 +18,14 @@ public class HoverOverTest extends TestUtilities {
 		// click on Hovers link
 		final HoverPage hovers = welcomePage.HoverPage();
 
-		// hover over user 1 and check if user name is shown
-		hovers.hoverOverElement(1);
-		Assert.assertTrue(hovers.getUserName().contains("user1"));
-
-		// hover over user 1 and check if user name is shown
-		hovers.hoverOverElement(2);
-		Assert.assertTrue(hovers.getUserName().contains("user2"));
-
-		// hover over user 1 and check if user name is shown
-		hovers.hoverOverElement(3);
-		Assert.assertTrue(hovers.getUserName().contains("user3"));
+		//open user profile
+		hovers.openUserProfile(1);
+		
+		//check URL of user 3 profile is correct
+		Assert.assertEquals(hovers.getCUrl(), hovers.getExpectedURL());
+		
+		//check h1 text is the expected
+		Assert.assertTrue(hovers.getNewPagetext().contains("Not Found"), "The expected text is not shown");
 	}
 
 }

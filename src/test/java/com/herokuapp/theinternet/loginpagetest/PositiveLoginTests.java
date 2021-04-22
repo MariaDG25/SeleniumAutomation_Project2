@@ -16,8 +16,6 @@ public class PositiveLoginTests extends TestUtilities {
 	
 		final BasePageObject basePageObj = new BasePageObject(driver, log);
 		final WelcomePage welcomePage = new WelcomePage(driver, log);
-		
-		log.info("Starting logIn test");
 
 		// open main page
 		welcomePage.openPage();

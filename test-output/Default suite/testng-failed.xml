@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.herokuapp.theinternet.draganddroptest.DragandDropTest">
+      <class name="com.herokuapp.theinternet.slidertest.SliderTest">
         <methods>
-          <include name="selectOptionDropdown"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="horizontalSliderTest"/>
         </methods>
-      </class> <!-- com.herokuapp.theinternet.draganddroptest.DragandDropTest -->
+      </class> <!-- com.herokuapp.theinternet.slidertest.SliderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

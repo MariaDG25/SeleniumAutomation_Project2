@@ -22,6 +22,7 @@ public class WelcomePage extends BasePageObject {
 	private By fileUplink = By.linkText("File Upload");
 	private By dropAndDraglink = By.linkText("Drag and Drop");
 	private By hoversLink = By.linkText("Hovers");
+	private By horizontalSlider = By.linkText("Horizontal Slider");
 
 	private String url = "http://the-internet.herokuapp.com/";
 
@@ -105,11 +106,18 @@ public class WelcomePage extends BasePageObject {
 		click(dropAndDraglink);
 		return new DragandDropPage(driver, log);
 	}
-	
+
 	// open Hovers page
 	public HoverPage HoverPage() {
 		log.info("Clicking on Hovers link >>>> Opening Hovers page");
 		click(hoversLink);
 		return new HoverPage(driver, log);
+	}
+
+	// open Horizontal Slider page
+	public SliderPage SliderPage() {
+		log.info("Clicking on Horizontal Slider link >>>> Opening Horizontal Slider page");
+		click(horizontalSlider);
+		return new SliderPage(driver, log);
 	}
 }
